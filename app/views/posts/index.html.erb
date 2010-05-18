@@ -1,15 +1,48 @@
+<style type="text/css">
+	
+	.forum-name{
+		border-bottom:1px solid green;
+	}
+	.post-item{
+		padding:10px;
+	}
+	.posts{
+		padding:50px;
+	}
+	.post-controls a{
+		margin-left:50px;
+	}
+</style>
 
-<ul>
-	<% @forum.posts.each do |post| %>
-        <li>
-			<%= link_to post.title , forum_post_path(@forum,post)  %>
-			<%= link_to "EDIT" , edit_forum_post_path(@forum,post) %>
-			<%= link_to "DELETE" ,  forum_post_path(@forum,post) ,:method=>:delete %>
-		</li>
-    <% end %>
-</ul>
+<div class='forum'>
+	<h1 class="forum-name">
+		<%= h @forum.name %>
+	</h1>	
+	<h2 class="forum-description">
+		<%= h @forum.description %>
+	</h2>
+</div>
 
+<div class="posts">
+	<h1>The all posts in the forum</h1>
+	<ul class="post-list">
+		<% @forum.posts.each do |post| %>
+	        <li class="post-item">
+				<%= link_to post.title , forum_post_path(@forum,post)  %>
+				
+				<div class="post-controls">
+					<%= link_to "EDIT" , edit_forum_post_path(@forum,post) %>
+					<%= link_to "DELETE" ,  forum_post_path(@forum,post) ,:method=>:delete %>
+				</div>
+			</li>
+	    <% end %>
+	</ul>
+</div>
+
+<div class="post-create">
 <%= link_to "Create a Post", new_forum_post_path %>
+</div>
 
-
-<%= link_to "Back to forum", forum_path(@forum) %>
+<div class="post-back">
+<%= link_to "Back to forum list",forums_path %>
+</div>

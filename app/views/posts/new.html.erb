@@ -1,13 +1,25 @@
+<style type="text/css">
+	.post-poster,.post-title,.post-content,.insert-button{
+		padding:20px;
+	}
+</style>
+
 <% form_for @post, :url => forum_posts_path(@forum) , :method=>:put do |f| %>
-    <%= f.label :title, "Poster" %>
-    <%= f.text_field :poster %>
 
-    <%= f.label :title, "Post Title" %>
-    <%= f.text_field :title %>
-
-    <%= f.label :content, "content" %>
-    <%= f.text_area :content %>
-
+	<div class="post-poster">
+	    <%= f.label :title, "Poster" %>
+	    <%= f.text_field :poster %>
+	</div>
+	<div class="post-title">
+	    <%= f.label :title, "Post Title" %>
+	    <%= f.text_field :title %>
+	</div>
+	<div class="post-content">
+    	<%= f.label :content, "content" %>
+    	<%= f.text_area :content %>
+	</div>
     
-    <%= f.submit "Create a Post" %>
+	<div class="insert-button">
+    	<%= f.submit "Create a Post" %>
+	</div>
 <% end %>

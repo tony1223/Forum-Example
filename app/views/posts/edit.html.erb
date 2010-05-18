@@ -1,13 +1,25 @@
+<style type="text/css">
+	.post-poster,.post-title,.post-content,.update-button{
+		padding:20px;
+	}
+</style>
+
 <% form_for @post, :url => forum_post_path(@forum,@post) , :method=>:put do |f| %>
 
-    <%= f.label :title, "Poster" %>
-    <%= f.text_field :poster %>
+	<div class="post-poster">
+	    <%= f.label :title, "Poster" %>
+	    <%= f.text_field :poster %>
+	</div>
+	<div class="post-title">
+	    <%= f.label :title, "Post Title" %>
+	    <%= f.text_field :title %>
+	</div>
+	<div class="post-content">
+		<%= f.label :content, "content" %>
+		<%= f.text_area :content %>
+	</div>
 
-    <%= f.label :title, "Post Title" %>
-    <%= f.text_field :title %>
-    
-    <%= f.label :content, "content" %>
-    <%= f.text_area :content %>
-    
-    <%= f.submit "Update" %>
+	<div class="update-button">
+		<%= f.submit "Update" %>
+	</div>
 <% end %>

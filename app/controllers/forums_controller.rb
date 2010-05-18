@@ -1,15 +1,13 @@
 class ForumsController < ApplicationController
   before_filter :find_forum, :only => [ :show, :edit, :update, :destroy]
   
-  def find_forum
-    @forum = Forum.find(params[:id])
-  end   
   
   def index 
     @forums = Forum.find(:all) 
   end
   
   def show 
+    redirect_to forum_posts_path(@forum)
   end
   
   def new 
@@ -19,7 +17,7 @@ class ForumsController < ApplicationController
   def create 
     @forum = Forum.new(params[:forum])
     @forum.save
-    redirect_to :action => :index
+    redirect_to forums_path
   end
   
   def edit
@@ -28,12 +26,18 @@ class ForumsController < ApplicationController
   def update
     @forum.update_attributes(params[:forum])
     
-    redirect_to :action => :show,:id => @forum
+     redirect_to forums_path
   end
   
   def destroy
     @forum.destroy
     
-    redirect_to :action => :index
+    redirect_to forums_path
+  end
+  
+  protected
+  
+  def find_forum
+    @forum = Forum.find(params[:id])
   end
 end
