@@ -1,0 +1,14 @@
+<div class='forum'>
+	<div class="forum-poster">
+		<%= h @post.poster %>
+	</div>	
+	<div class="forum-title">
+		<%= h @post.title %>
+	</div>
+	<div class="forum-content">
+		<%= h @post.content %>
+	</div> 
+</div>
+
+<p> <%= link_to 'Edit this post' , edit_forum_post_path(@forum,@post) %></p>	
+<p> <%= link_to 'Back to index' , forum_posts_path(@forum) %></p>

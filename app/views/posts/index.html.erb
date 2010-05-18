@@ -1,0 +1,15 @@
+
+<ul>
+	<% @forum.posts.each do |post| %>
+        <li>
+			<%= link_to post.title , forum_post_path(@forum,post)  %>
+			<%= link_to "EDIT" , edit_forum_post_path(@forum,post) %>
+			<%= link_to "DELETE" ,  forum_post_path(@forum,post) ,:method=>:delete %>
+		</li>
+    <% end %>
+</ul>
+
+<%= link_to "Create a Post", new_forum_post_path %>
+
+
+<%= link_to "Back to forum", forum_path(@forum) %>

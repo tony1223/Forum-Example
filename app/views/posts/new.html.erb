@@ -1,0 +1,13 @@
+<% form_for @post, :url => forum_posts_path(@forum) , :method=>:put do |f| %>
+    <%= f.label :title, "Poster" %>
+    <%= f.text_field :poster %>
+
+    <%= f.label :title, "Post Title" %>
+    <%= f.text_field :title %>
+
+    <%= f.label :content, "content" %>
+    <%= f.text_area :content %>
+
+    
+    <%= f.submit "Create a Post" %>
+<% end %>

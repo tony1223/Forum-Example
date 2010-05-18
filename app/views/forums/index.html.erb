@@ -1,0 +1,12 @@
+
+<ul>
+	<% @forums.each do |forum| %>
+        <li>
+			<%= link_to forum.name , forum_path(forum)  %>
+			<%= link_to "EDIT" , edit_forum_path(forum) %>
+			<%= link_to "DELETE" ,forum_path(forum) ,:method=>:delete %>
+		</li>
+    <% end %>
+</ul>
+
+<%= link_to "Create Forum", new_forum_path %>
