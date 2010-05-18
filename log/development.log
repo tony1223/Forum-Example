@@ -1,0 +1,668 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 11:10:49) [GET]
+
+ActionController::RoutingError (No route matches "/helloworld" with {:method=>:get}):
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 11:11:18) [GET]
+
+ActionController::RoutingError (No route matches "/helloworld/say" with {:method=>:get}):
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HelloController#say (for 127.0.0.1 at 2010-05-18 11:11:58) [GET]
+
+ActionView::MissingTemplate (Missing template hello/say.erb in view path app/views):
+  app/controllers/hello_controller.rb:3:in `say'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HelloController#say (for 127.0.0.1 at 2010-05-18 11:12:42) [GET]
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/hello/say]
+
+
+Processing HelloController#say (for 127.0.0.1 at 2010-05-18 11:19:35) [GET]
+Completed in 64ms (View: 62, DB: 0) | 200 OK [http://localhost/hello/say]
+
+
+Processing HelloController#say (for 127.0.0.1 at 2010-05-18 11:19:36) [GET]
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/hello/say]
+
+
+Processing HelloController#say (for 127.0.0.1 at 2010-05-18 11:19:57) [GET]
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/hello/say]
+
+
+Processing HelloController#say (for 127.0.0.1 at 2010-05-18 11:19:58) [GET]
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/hello/say]
+
+
+Processing HelloController#index (for 127.0.0.1 at 2010-05-18 11:20:02) [GET]
+Rendering hello/index
+Completed in 56ms (View: 54, DB: 0) | 200 OK [http://localhost/hello/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (22.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEvents (20100518033000)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "is_public" boolean, "capacity" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100518033000')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mEvent Create (0.5ms)[0m   [0;1mINSERT INTO "events" ("name", "created_at", "updated_at", "description", "is_public", "capacity") VALUES('Ruby Test', '2010-05-18 03:33:57', '2010-05-18 03:33:57', 'foooooo', NULL, NULL)[0m
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."name" = 'Ruby Test') LIMIT 1[0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."name" = 'Ruby Test') LIMIT 1[0m
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ( name = 'Ruby Test' ) LIMIT 1[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ( name = 'Ruby Test0' ) LIMIT 1[0m
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ( name = 'Ruby Test0' or name= 'Ruby Test' ) LIMIT 1[0m
+  [4;35;1mEvent Update (0.5ms)[0m   [0mUPDATE "events" SET "updated_at" = '2010-05-18 03:41:57', "name" = 'hi' WHERE "id" = 1[0m
+  [4;36;1mEvent Update (0.6ms)[0m   [0;1mUPDATE "events" SET "updated_at" = '2010-05-18 03:42:10', "is_public" = 'f' WHERE "id" = 1[0m
+  [4;35;1mEvent Destroy (0.4ms)[0m   [0mDELETE FROM "events" WHERE "id" = 1[0m
+  [4;36;1mEvent Destroy (0.7ms)[0m   [0;1mDELETE FROM "events" WHERE "id" = 1[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" ORDER BY id DESC LIMIT 2[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" ORDER BY id DESC LIMIT 2[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" ORDER BY id DESC LIMIT 2[0m
+  [4;36;1mEvent Create (0.5ms)[0m   [0;1mINSERT INTO "events" ("name", "created_at", "updated_at", "description", "is_public", "capacity") VALUES('ihover', '2010-05-18 03:57:36', '2010-05-18 03:57:36', NULL, NULL, NULL)[0m
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 13:50:32) [GET]
+  [4;36;1mEvent Load (0.6ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 84ms (View: 79, DB: 1) | 200 OK [http://localhost/events/]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 13:50:35) [GET]
+  Parameters: {"id"=>"2"}
+
+NameError (undefined local variable or method `param' for #<EventsController:0x1025a77f8>):
+  app/controllers/events_controller.rb:7:in `show'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (6.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 13:51:16) [GET]
+  Parameters: {"id"=>"2"}
+
+NameError (undefined local variable or method `param' for #<EventsController:0x10222f5d0>):
+  app/controllers/events_controller.rb:7:in `show'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 13:51:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #1 of app/views/events/show.html.erb:
+1: <%=h @event.name %>
+2: <%=h @event.description%>
+3: 
+4: <p><%= link_to 'back to index', :controller => 'events' , 
+
+    app/views/events/show.html.erb:1
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 13:51:38) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #1 of app/views/events/show.html.erb:
+1: <%=h @event.name %>
+2: <%=h @event.description%>
+3: 
+4: <p><%= link_to 'back to index', :controller => 'events' , 
+
+    app/views/events/show.html.erb:1
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 13:51:42) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #1 of app/views/events/show.html.erb:
+1: <%=h @event.name %>
+2: <%=h @event.description%>
+3: 
+4: <p><%= link_to 'back to index', :controller => 'events' , 
+
+    app/views/events/show.html.erb:1
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 13:53:11) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/events/]
+
+
+Processing EventsController#edit (for 127.0.0.1 at 2010-05-18 13:53:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/events/edit/2]
+
+
+Processing EventsController#edit (for 127.0.0.1 at 2010-05-18 13:53:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/edit
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/events/edit/2]
+
+
+Processing EventsController#edit (for 127.0.0.1 at 2010-05-18 13:53:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/edit
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/events/edit/2]
+
+
+Processing EventsController#edit (for 127.0.0.1 at 2010-05-18 13:54:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/events/edit/2]
+
+
+Processing EventsController#edit (for 127.0.0.1 at 2010-05-18 13:54:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/edit
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/events/edit/2]
+
+
+Processing EventsController#update (for 127.0.0.1 at 2010-05-18 13:54:17) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "id"=>"2", "event"=>{"name"=>"ihover", "description"=>"asdsadad"}}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+
+NoMethodError (undefined method `updateattributes' for #<Event:0x1023e3a20>):
+  app/controllers/events_controller.rb:26:in `update'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#update (for 127.0.0.1 at 2010-05-18 13:54:46) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "id"=>"2", "event"=>{"name"=>"ihover", "description"=>"asdsadad"}}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+  [4;36;1mEvent Update (0.4ms)[0m   [0;1mUPDATE "events" SET "updated_at" = '2010-05-18 05:54:46', "description" = 'asdsadad' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/events/show/2
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/events/update/2]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 13:54:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #1 of app/views/events/show.html.erb:
+1: <%=h @event.name %>
+2: <%=h @event.description%>
+3: 
+4: <p><%= link_to 'back to index', :controller => 'events' , 
+
+    app/views/events/show.html.erb:1
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#update (for 127.0.0.1 at 2010-05-18 13:55:33) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "id"=>"2", "event"=>{"name"=>"ihover", "description"=>"asdsadad"}}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Redirected to http://localhost:3000/events/show/2
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/events/update/2]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 13:55:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/events/show/2]
+
+
+Processing EventsController#update (for 127.0.0.1 at 2010-05-18 13:55:56) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "id"=>"2", "event"=>{"name"=>"ihover", "description"=>"asdsadad"}}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Redirected to http://localhost:3000/events/show/2
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/events/update/2]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 13:55:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #2 of app/views/events/show.html.erb:
+1: 
+2: <%=h @event.name %>
+3: <%=h @event.description%>
+4: 
+5: <p><%= link_to 'back to index', :controller => 'events' , 
+
+    app/views/events/show.html.erb:2
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#update (for 127.0.0.1 at 2010-05-18 13:56:11) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "id"=>"2", "event"=>{"name"=>"ihover", "description"=>"asdsadad"}}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Redirected to http://localhost:3000/events/show/2
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/events/update/2]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 13:56:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/events/show/2]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 13:56:13) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#edit (for 127.0.0.1 at 2010-05-18 13:56:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/events/edit/2]
+
+
+Processing EventsController#update (for 127.0.0.1 at 2010-05-18 13:56:17) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "id"=>"2", "event"=>{"name"=>"ihover", "description"=>"asdsadadsadsadsadsd"}}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+  [4;35;1mEvent Update (0.3ms)[0m   [0mUPDATE "events" SET "updated_at" = '2010-05-18 05:56:17', "description" = 'asdsadadsadsadsadsd' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/events/show/2
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/events/update/2]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 13:56:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering events/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/events/show/2]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 13:56:18) [GET]
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#destroy (for 127.0.0.1 at 2010-05-18 13:56:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+
+NoMethodError (undefined method `destroyy' for #<Event:0x1026b9fb0>):
+  app/controllers/events_controller.rb:32:in `destroy'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#destroy (for 127.0.0.1 at 2010-05-18 13:56:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+  [4;36;1mEvent Destroy (0.3ms)[0m   [0;1mDELETE FROM "events" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/events
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/events/destroy/2]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 13:56:30) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-05-18 13:56:32) [GET]
+Rendering events/new
+
+ActionView::TemplateError (undefined method `laber' for #<ActionView::Helpers::FormBuilder:0x1021dee28>) on line #6 of app/views/events/new.html.erb:
+3: 	<%= f.label :name ,"Name" %>
+4: 	<%= f.text_field :name %>
+5: 	
+6: 	<% f.laber :description, "Description" %>
+7: 	<% f.text_area :description %>
+8: 	
+9: 	<% f.submit "Create" %>
+
+    app/views/events/new.html.erb:6
+    app/views/events/new.html.erb:1
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/Cellar/ruby-enterprise-edition/2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-05-18 13:56:47) [GET]
+Rendering events/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-05-18 13:56:48) [GET]
+Rendering events/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-05-18 13:56:59) [GET]
+Rendering events/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/events/new]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2010-05-18 13:57:05) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "event"=>{"name"=>"asdasd", "description"=>"asdsadsadad"}}
+  [4;36;1mEvent Create (0.4ms)[0m   [0;1mINSERT INTO "events" ("name", "created_at", "updated_at", "description", "is_public", "capacity") VALUES('asdasd', '2010-05-18 05:57:05', '2010-05-18 05:57:05', 'asdsadsadad', NULL, NULL)[0m
+Redirected to http://localhost:3000/events
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/events/create]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 13:57:05) [GET]
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-05-18 13:57:08) [GET]
+Rendering events/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/events/new]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2010-05-18 13:57:11) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "event"=>{"name"=>"11111", "description"=>"1111111"}}
+  [4;36;1mEvent Create (0.4ms)[0m   [0;1mINSERT INTO "events" ("name", "created_at", "updated_at", "description", "is_public", "capacity") VALUES('11111', '2010-05-18 05:57:11', '2010-05-18 05:57:11', '1111111', NULL, NULL)[0m
+Redirected to http://localhost:3000/events
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/events/create]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 13:57:11) [GET]
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-05-18 13:57:14) [GET]
+Rendering events/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/events/new]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2010-05-18 13:57:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "event"=>{"name"=>"ccccc", "description"=>"ccccccccccc"}}
+  [4;36;1mEvent Create (0.3ms)[0m   [0;1mINSERT INTO "events" ("name", "created_at", "updated_at", "description", "is_public", "capacity") VALUES('ccccc', '2010-05-18 05:57:18', '2010-05-18 05:57:18', 'ccccccccccc', NULL, NULL)[0m
+Redirected to http://localhost:3000/events
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/events/create]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 13:57:18) [GET]
+  [4;35;1mEvent Load (0.7ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 13:57:40) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 5) [0m
+Rendering events/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/events/show/5]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 13:57:41) [GET]
+  [4;35;1mEvent Load (0.6ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#destroy (for 127.0.0.1 at 2010-05-18 13:57:43) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 4) [0m
+  [4;35;1mEvent Destroy (0.3ms)[0m   [0mDELETE FROM "events" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/events
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/events/destroy/4]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 13:57:43) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#destroy (for 127.0.0.1 at 2010-05-18 14:01:29) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 5) [0m
+  [4;36;1mEvent Destroy (0.3ms)[0m   [0;1mDELETE FROM "events" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/events
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/events/destroy/5]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 14:01:29) [GET]
+  [4;35;1mEvent Load (0.6ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#edit (for 127.0.0.1 at 2010-05-18 14:01:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 3) [0m
+Rendering events/edit
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/events/edit/3]
+
+
+Processing EventsController#update (for 127.0.0.1 at 2010-05-18 14:01:33) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "id"=>"3", "event"=>{"name"=>"asdasd", "description"=>"asdsadsadaddasdasd"}}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 3) [0m
+  [4;36;1mEvent Update (0.3ms)[0m   [0;1mUPDATE "events" SET "updated_at" = '2010-05-18 06:01:33', "description" = 'asdsadsadaddasdasd' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/events/show/3
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/events/update/3]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 14:01:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 3) [0m
+Rendering events/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/events/show/3]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-05-18 14:01:37) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#edit (for 127.0.0.1 at 2010-05-18 14:01:38) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 3) [0m
+Rendering events/edit
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/events/edit/3]
+
+
+Processing EventsController#update (for 127.0.0.1 at 2010-05-18 14:01:42) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "id"=>"3", "event"=>{"name"=>"asdasd", "description"=>"asdsadsadaddasdasd<><><fhfgfgfdg"}}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 3) [0m
+  [4;35;1mEvent Update (0.3ms)[0m   [0mUPDATE "events" SET "updated_at" = '2010-05-18 06:01:42', "description" = 'asdsadsadaddasdasd<><><fhfgfgfdg' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/events/show/3
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/events/update/3]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-05-18 14:01:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 3) [0m
+Rendering events/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/events/show/3]
