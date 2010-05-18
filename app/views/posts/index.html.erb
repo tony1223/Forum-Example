@@ -28,11 +28,11 @@
 	<ul class="post-list">
 		<% @forum.posts.each do |post| %>
 	        <li class="post-item">
-				<%= link_to post.title , forum_post_path(@forum,post)  %>
+				<%= link_to(post.title , forum_post_path(@forum,post) ) %>
 				
 				<div class="post-controls">
-					<%= link_to "EDIT" , edit_forum_post_path(@forum,post) %>
-					<%= link_to "DELETE" ,  forum_post_path(@forum,post) ,:method=>:delete %>
+					<%= link_to("EDIT" , edit_forum_post_path(@forum,post) )%>
+					<%= link_to("DELETE" ,  forum_post_path(@forum,post) ,:method=>:delete )%>
 				</div>
 			</li>
 	    <% end %>
@@ -40,9 +40,9 @@
 </div>
 
 <div class="post-create">
-<%= link_to "Create a Post", new_forum_post_path %>
+<%= link_to ("Create a Post", new_forum_post_path )%>
 </div>
 
 <div class="post-back">
-<%= link_to "Back to forum list",forums_path %>
+<%= link_to ("Back to forum list",forums_path )%>
 </div>

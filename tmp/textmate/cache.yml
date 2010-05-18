@@ -1,0 +1,21 @@
+--- 
+post: 
+  :associations: 
+  - forum
+  :columns: 
+  - id
+  - title
+  - content
+  - poster
+  - created_at
+  - updated_at
+  - forum_id
+forum: 
+  :associations: 
+  - posts
+  :columns: 
+  - id
+  - name
+  - description
+  - created_at
+  - updated_at

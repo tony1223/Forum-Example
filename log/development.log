@@ -7126,3 +7126,423 @@ Processing PostsController#index (for 127.0.0.1 at 2010-05-18 17:54:44) [GET]
 Rendering posts/index
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 7) [0m
 Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/forums/7/posts]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:09:11) [GET]
+  [4;36;1mForum Load (0.7ms)[0m   [0;1mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 33ms (View: 23, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:09:12) [GET]
+  [4;35;1mForum Load (0.6ms)[0m   [0mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ForumsController#show (for 127.0.0.1 at 2010-05-18 18:09:13) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 2) [0m
+Redirected to http://localhost:3000/forums/2/posts
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/forums/2]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:09:13) [GET]
+  Parameters: {"forum_id"=>"2"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 2) [0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 2) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 2) [0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/forums/2/posts]
+
+
+Processing ForumsController#edit (for 127.0.0.1 at 2010-05-18 18:09:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 2) [0m
+Rendering forums/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/forums/2/edit]
+
+
+Processing ForumsController#update (for 127.0.0.1 at 2010-05-18 18:09:18) [PUT]
+  Parameters: {"commit"=>"Update", "forum"=>{"name"=>"The forumq", "description"=>"123456"}, "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "id"=>"2"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 2) [0m
+  [4;36;1mForum Update (0.4ms)[0m   [0;1mUPDATE "forums" SET "updated_at" = '2010-05-18 10:09:18', "description" = '123456' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/forums
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/forums/2]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:09:18) [GET]
+  [4;35;1mForum Load (0.6ms)[0m   [0mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/forums]
+
+
+Processing ForumsController#edit (for 127.0.0.1 at 2010-05-18 18:09:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 2) [0m
+Rendering forums/edit
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/forums/2/edit]
+
+
+Processing ForumsController#new (for 127.0.0.1 at 2010-05-18 18:09:22) [GET]
+Rendering forums/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/forums/new]
+
+
+Processing ForumsController#create to #<forum:0x10191dcf8> (for 127.0.0.1 at 2010-05-18 18:09:25) [POST]
+  Parameters: {"commit"=>"Create a forum", "forum"=>{"name"=>"123", "description"=>"456"}, "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk="}
+  [4;35;1mForum Create (0.3ms)[0m   [0mINSERT INTO "forums" ("name", "created_at", "updated_at", "description") VALUES('123', '2010-05-18 10:09:25', '2010-05-18 10:09:25', '456')[0m
+Redirected to http://localhost:3000/forums
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/forums.%23%3Cforum:0x10191dcf8%3E]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:09:25) [GET]
+  [4;36;1mForum Load (0.7ms)[0m   [0;1mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 91ms (View: 84, DB: 1) | 200 OK [http://localhost/forums]
+
+
+Processing ForumsController#destroy (for 127.0.0.1 at 2010-05-18 18:09:27) [DELETE]
+  Parameters: {"authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "id"=>"2"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 2) [0m
+  [4;36;1mForum Destroy (0.3ms)[0m   [0;1mDELETE FROM "forums" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/forums
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/forums/2]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:09:27) [GET]
+  [4;35;1mForum Load (1.2ms)[0m   [0mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/forums]
+
+
+Processing ForumsController#show (for 127.0.0.1 at 2010-05-18 18:09:28) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+Redirected to http://localhost:3000/forums/8/posts
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/forums/8]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:09:28) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/forums/8/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-05-18 18:09:29) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+Rendering posts/new
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/forums/8/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-05-18 18:09:32) [POST]
+  Parameters: {"commit"=>"Create a Post", "post"=>{"title"=>"123", "poster"=>"123", "content"=>"123"}, "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "updated_at", "poster", "forum_id", "content") VALUES('2010-05-18 10:09:32', '123', '2010-05-18 10:09:32', '123', 8, '123')[0m
+Redirected to http://localhost:3000/forums/8/posts
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/forums/8/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:09:32) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;35;1mForum Load (0.3ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/forums/8/posts]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2010-05-18 18:09:35) [GET]
+  Parameters: {"forum_id"=>"8", "id"=>"13"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 13 AND ("posts".forum_id = 8)) [0m
+Rendering posts/edit
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/forums/8/posts/13/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2010-05-18 18:09:37) [PUT]
+  Parameters: {"commit"=>"Update", "post"=>{"title"=>"123", "poster"=>"123234", "content"=>"123234"}, "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "forum_id"=>"8", "id"=>"13"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 13 AND ("posts".forum_id = 8)) [0m
+  [4;36;1mPost Update (0.3ms)[0m   [0;1mUPDATE "posts" SET "updated_at" = '2010-05-18 10:09:37', "poster" = '123234', "content" = '123234' WHERE "id" = 13[0m
+Redirected to http://localhost:3000/forums/8/posts/13
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/forums/8/posts/13]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-05-18 18:09:37) [GET]
+  Parameters: {"forum_id"=>"8", "id"=>"13"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 13 AND ("posts".forum_id = 8)) [0m
+Rendering posts/show
+Completed in 16ms (View: 6, DB: 0) | 200 OK [http://localhost/forums/8/posts/13]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:09:41) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/forums/8/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2010-05-18 18:09:43) [DELETE]
+  Parameters: {"authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "forum_id"=>"8", "id"=>"13"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 13 AND ("posts".forum_id = 8)) [0m
+  [4;36;1mPost Destroy (0.3ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 13[0m
+Redirected to http://localhost:3000/forums/8/posts
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/forums/8/posts/13]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:09:43) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/forums/8/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-05-18 18:09:44) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+Rendering posts/new
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/forums/8/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-05-18 18:09:50) [POST]
+  Parameters: {"commit"=>"Create a Post", "post"=>{"title"=>"asd", "poster"=>"asdasdasd", "content"=>"asd"}, "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "updated_at", "poster", "forum_id", "content") VALUES('2010-05-18 10:09:50', 'asd', '2010-05-18 10:09:50', 'asdasdasd', 8, 'asd')[0m
+Redirected to http://localhost:3000/forums/8/posts
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/forums/8/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:09:50) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/forums/8/posts]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:09:51) [GET]
+  [4;36;1mForum Load (0.6ms)[0m   [0;1mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/forums]
+
+
+Processing ForumsController#show (for 127.0.0.1 at 2010-05-18 18:09:53) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 7) [0m
+Redirected to http://localhost:3000/forums/7/posts
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/forums/7]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:09:53) [GET]
+  Parameters: {"forum_id"=>"7"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 7) [0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 7) [0m
+Rendering posts/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 7) [0m
+Completed in 15ms (View: 6, DB: 0) | 200 OK [http://localhost/forums/7/posts]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:09:56) [GET]
+  [4;35;1mForum Load (0.5ms)[0m   [0mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/forums]
+
+
+Processing ForumsController#show (for 127.0.0.1 at 2010-05-18 18:09:57) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+Redirected to http://localhost:3000/forums/8/posts
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/forums/8]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:09:57) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/forums/8/posts]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:09:59) [GET]
+  [4;36;1mForum Load (0.5ms)[0m   [0;1mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/forums]
+
+
+Processing ForumsController#show (for 127.0.0.1 at 2010-05-18 18:10:01) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mForum Load (0.3ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+Redirected to http://localhost:3000/forums/8/posts
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/forums/8]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:10:01) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Rendering posts/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/forums/8/posts]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:10:03) [GET]
+  [4;35;1mForum Load (0.5ms)[0m   [0mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/forums]
+
+
+Processing ForumsController#show (for 127.0.0.1 at 2010-05-18 18:10:03) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 7) [0m
+Redirected to http://localhost:3000/forums/7/posts
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/forums/7]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:10:03) [GET]
+  Parameters: {"forum_id"=>"7"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 7) [0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 7) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 7) [0m
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/forums/7/posts]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:10:05) [GET]
+  [4;36;1mForum Load (0.5ms)[0m   [0;1mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/forums]
+
+
+Processing ForumsController#edit (for 127.0.0.1 at 2010-05-18 18:10:08) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+Rendering forums/edit
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/forums/8/edit]
+
+
+Processing ForumsController#update (for 127.0.0.1 at 2010-05-18 18:10:10) [PUT]
+  Parameters: {"commit"=>"Update", "forum"=>{"name"=>"123", "description"=>"456"}, "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "id"=>"8"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+Redirected to http://localhost:3000/forums
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/forums/8]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:10:10) [GET]
+  [4;35;1mForum Load (0.5ms)[0m   [0mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/forums]
+
+
+Processing ForumsController#show (for 127.0.0.1 at 2010-05-18 18:10:11) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+Redirected to http://localhost:3000/forums/8/posts
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/forums/8]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:10:11) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/forums/8/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-05-18 18:10:12) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+Rendering posts/new
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/forums/8/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-05-18 18:10:18) [POST]
+  Parameters: {"commit"=>"Create a Post", "post"=>{"title"=>"asdasdasd", "poster"=>"asdasdasd", "content"=>"asdasdasd"}, "authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Create (0.9ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "updated_at", "poster", "forum_id", "content") VALUES('2010-05-18 10:10:18', 'asdasdasd', '2010-05-18 10:10:18', 'asdasdasd', 8, 'asdasdasd')[0m
+Redirected to http://localhost:3000/forums/8/posts
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/forums/8/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:10:18) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/forums/8/posts]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:10:19) [GET]
+  [4;36;1mForum Load (0.5ms)[0m   [0;1mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/forums]
+
+
+Processing ForumsController#show (for 127.0.0.1 at 2010-05-18 18:10:20) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 7) [0m
+Redirected to http://localhost:3000/forums/7/posts
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/forums/7]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:10:20) [GET]
+  Parameters: {"forum_id"=>"7"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 7) [0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 7) [0m
+Rendering posts/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 7) [0m
+Completed in 15ms (View: 6, DB: 0) | 200 OK [http://localhost/forums/7/posts]
+
+
+Processing ForumsController#index (for 127.0.0.1 at 2010-05-18 18:10:22) [GET]
+  [4;35;1mForum Load (0.5ms)[0m   [0mSELECT * FROM "forums" [0m
+Rendering forums/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/forums]
+
+
+Processing ForumsController#show (for 127.0.0.1 at 2010-05-18 18:10:23) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+Redirected to http://localhost:3000/forums/8/posts
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/forums/8]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:10:23) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/forums/8/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2010-05-18 18:10:24) [DELETE]
+  Parameters: {"authenticity_token"=>"8LbnjOzPnspaJ+tUF4z+rGe6PRjYahhxHGyR+wEFodk=", "forum_id"=>"8", "id"=>"14"}
+  [4;36;1mForum Load (0.2ms)[0m   [0;1mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 14 AND ("posts".forum_id = 8)) [0m
+  [4;36;1mPost Destroy (0.3ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 14[0m
+Redirected to http://localhost:3000/forums/8/posts
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/forums/8/posts/14]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-05-18 18:10:24) [GET]
+  Parameters: {"forum_id"=>"8"}
+  [4;35;1mForum Load (0.2ms)[0m   [0mSELECT * FROM "forums" WHERE ("forums"."id" = 8) [0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts".forum_id = 8) [0m
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/forums/8/posts]
