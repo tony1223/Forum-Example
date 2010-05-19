@@ -8,7 +8,7 @@
 
 	<div class="post-poster">
 	    <%= f.label :title, "Poster" %>
-	    <%= f.text_field :poster %>
+	    <%= current_user[:name] +"("+ current_user[:email]+")" %>
 	</div>
 	<div class="post-title">
 	    <%= f.label :title, "Post Title" %>

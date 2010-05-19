@@ -1,9 +1,10 @@
 class ForumsController < ApplicationController
   before_filter :find_forum, :only => [ :show, :edit, :update, :destroy]
-  
+  before_filter :login_required , :except => [:index , :show]
   
   def index 
-    @forums = Forum.find(:all) 
+    @forums = Forum.paginate :page => params[:page], :order => 'created_at DESC'
+    
   end
   
   def show 

@@ -26,17 +26,21 @@
 <div class="posts">
 	<h1>The all posts in the forum</h1>
 	<ul class="post-list">
-		<% @forum.posts.each do |post| %>
+		<%  @posts.each do |post| %>
 	        <li class="post-item">
 				<%= link_to(post.title , forum_post_path(@forum,post) ) %>
 				
+				
+				<% if current_user && (current_user[:id] == post[:user_id]) then %>
 				<div class="post-controls">
 					<%= link_to("EDIT" , edit_forum_post_path(@forum,post) )%>
 					<%= link_to("DELETE" ,  forum_post_path(@forum,post) ,:method=>:delete )%>
 				</div>
+				<% end %>
 			</li>
 	    <% end %>
 	</ul>
+		<%= will_paginate @posts %>
 </div>
 
 <div class="post-create">

@@ -6,10 +6,10 @@
 
 <% form_for @post, :url => forum_post_path(@forum,@post) , :method=>:put do |f| %>
 
-	<div class="post-poster">
-	    <%= f.label :title, "Poster" %>
-	    <%= f.text_field :poster %>
-	</div>
+    <div class="post-poster">
+      <%= f.label :title, "Poster" %>
+      <%= @poster[:name] +"("+ @poster[:email]+")" %>
+    </div>
 	<div class="post-title">
 	    <%= f.label :title, "Post Title" %>
 	    <%= f.text_field :title %>
