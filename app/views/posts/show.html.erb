@@ -32,7 +32,7 @@
 			Poster
 		</div>		
 		<div class="forum-Poster-content">
-			<%= h @post.user[:name] + "(" + @post.user[:email] + ")"%>
+			 <%= h "#{@post.user.name} ( #{@post.user.email})"%>
 		</div>
 	</div>	
 	<div class="forum-title">
