@@ -41,6 +41,7 @@
 	    <% end %>
 	</ul>
 		<%= will_paginate @posts %>
+		<div class="post-counts">Total:  <%= @posts.total_entries %> posts </div>
 </div>
 
 <div class="post-create">

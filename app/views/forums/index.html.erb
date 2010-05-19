@@ -34,6 +34,7 @@
 	    <% end %>
 	</ul>
 	<%= will_paginate @forums %>
+	<div class="forum-counts">Total:  <%= @forums.total_entries %> forum </div>
 
 </div>
 <%= link_to("Create Forum", new_forum_path) %>
