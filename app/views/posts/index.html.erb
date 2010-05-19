@@ -31,7 +31,7 @@
 				<%= link_to(post.title , forum_post_path(@forum,post) ) %>
 				
 				
-				<% if current_user && (current_user[:id] == post[:user_id]) then %>
+				<% if current_user && (post.user == current_user ) %>
 				<div class="post-controls">
 					<%= link_to("EDIT" , edit_forum_post_path(@forum,post) )%>
 					<%= link_to("DELETE" ,  forum_post_path(@forum,post) ,:method=>:delete )%>
@@ -44,9 +44,9 @@
 </div>
 
 <div class="post-create">
-<%= link_to ("Create a Post", new_forum_post_path )%>
+<%= link_to("Create a Post", new_forum_post_path )%>
 </div>
 
 <div class="post-back">
-<%= link_to ("Back to forum list",forums_path )%>
+<%= link_to("Back to forum list",forums_path )%>
 </div>

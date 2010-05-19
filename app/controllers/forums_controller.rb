@@ -3,7 +3,7 @@ class ForumsController < ApplicationController
   before_filter :login_required , :except => [:index , :show]
   
   def index 
-    @forums = Forum.paginate :page => params[:page], :order => 'created_at DESC'
+    @forums = Forum.paginate :page => params[:page], :order => "created_at DESC"
     
   end
   

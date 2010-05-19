@@ -27,8 +27,8 @@
 				<%= link_to(forum.name , forum_path(forum) )%>
 			
 				<div class="forum-controls">
-					<%= link_to ("EDIT" , edit_forum_path(forum)) %>
-					<%= link_to ("DELETE" ,forum_path(forum) ,:method=>:delete) %>
+					<%= link_to("EDIT" , edit_forum_path(forum)) %>
+					<%= link_to("DELETE" ,forum_path(forum) ,:method=>:delete) %>
 				</div>
 			</li>
 	    <% end %>
@@ -36,4 +36,4 @@
 	<%= will_paginate @forums %>
 
 </div>
-<%= link_to ("Create Forum", new_forum_path) %>
+<%= link_to("Create Forum", new_forum_path) %>
