@@ -3,7 +3,7 @@ class ForumsController < ApplicationController
   before_filter :login_required , :except => [:index , :show]
   
   def index 
-    @forums = Forum.paginate :page => params[:page], :order => "created_at DESC"
+    @forums = Forum.paginate(:page => params[:page], :order => "created_at DESC")
     
   end
   
@@ -17,23 +17,30 @@ class ForumsController < ApplicationController
   
   def create 
     @forum = Forum.new(params[:forum])
-    @forum.save
-    redirect_to forums_path
+    if @forum.save
+      redirect_to forums_path
+    else
+      render :action => "new"
+    end 
   end
   
   def edit
   end
   
   def update
-    @forum.update_attributes(params[:forum])
-    
-     redirect_to forums_path
+    if @forum.update_attributes(params[:forum])
+      redirect_to forums_path
+    else
+      render :action => "edit"
+    end
   end
   
   def destroy
-    @forum.destroy
-    
-    redirect_to forums_path
+    if @forum.destroy
+      redirect_to forums_path
+    else
+      render :action => "index"
+    end 
   end
   
   protected
