@@ -16,7 +16,7 @@ class Admin::UsersController < ApplicationController
       redirect_to(admin_users_path)
     else
       flash[:error]  = "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
-      render :action => 'new'
+      render :action => "new"
     end
   end
    
