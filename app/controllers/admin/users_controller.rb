@@ -1,7 +1,7 @@
 class Admin::UsersController < ApplicationController
   before_filter :login_required 
-  before_filter :find_user, :only => [ :show, :edit, :update, :destroy]
   before_filter :require_is_admin
+  before_filter :find_user, :only => [ :show, :edit, :update, :destroy]  
 
 
 
@@ -54,9 +54,4 @@ class Admin::UsersController < ApplicationController
     @user = User.find(params[:id])
   end
   
-  def require_is_admin
-    if !current_user.is_admin
-      redirect_to(forums_path)
-    end
-  end
 end

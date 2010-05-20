@@ -7,4 +7,11 @@ class ApplicationController < ActionController::Base
   include AuthenticatedSystem
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  
+  protected 
+  def require_is_admin
+    if !current_user.is_admin
+      redirect_to(forums_path)
+    end
+  end
 end

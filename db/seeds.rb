@@ -5,3 +5,13 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+
+u = User.new( :login => "admin" , 
+             :password => "techbang" , 
+             :password_confirmation=>"techbang" ,
+             :email => "admin@www.techbang.com.tw" )
+             
+u.is_admin = true
+u.save
+
+puts u.inspect

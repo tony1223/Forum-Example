@@ -49,9 +49,4 @@ class Admin::ForumsController < ApplicationController
     @forum = Forum.find(params[:id])
   end
   
-  def require_is_admin
-    if !current_user.is_admin
-      redirect_to(forums_path)
-    end
-  end
 end

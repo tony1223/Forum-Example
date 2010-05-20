@@ -18,7 +18,7 @@
 	}
 	.page-links a{
 		margin-left:50px;
-	}	
+	}
 </style>
 
 
@@ -28,6 +28,11 @@
 		<% @forums.each do |forum| %>
 	        <li class="forum-item">
 				<%= link_to(forum.name , forum_path(forum) )%>
+			
+				<div class="forum-controls">
+					<%= link_to("EDIT" , edit_forum_path(forum)) %>
+					<%= link_to("DELETE" ,forum_path(forum) ,:method=>:delete) %>
+				</div>
 			</li>
 	    <% end %>
 	</ul>
@@ -39,7 +44,9 @@
 <div class="page-links">
 
 <%= link_to("Backend System", admin_forums_path) %>
-
-<%= link_to("User Manager", admin_users_path) %>
+	
+<%= link_to("Create Forum", new_forum_path) %>
 
 </div>
+
+
