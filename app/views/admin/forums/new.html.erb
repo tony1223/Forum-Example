@@ -1,0 +1,29 @@
+<style type="text/css">
+	
+	.forum-name{
+		padding:30px;
+	}
+	.forum-description{
+		padding:30px;
+	}
+	.update-button{
+		padding:20px;
+	}
+</style>
+
+
+
+<% form_for @forum, :url => admin_forums_path(@forum) ,:method=>"put" do |f| %>
+	<div class="forum-name">
+	    <%= f.label :name, "Forum Name" %>
+	    <%= f.text_field :name %>
+	</div>
+	<div class="forum-description">
+	    <%= f.label :description, "Description" %>
+	    <%= f.text_area :description %>
+	</div>
+
+	<div class="update-button">
+		<%= f.submit "Create a forum" %>
+	</div>
+<% end %>

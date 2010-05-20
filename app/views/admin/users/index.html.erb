@@ -1,0 +1,39 @@
+<style type="text/css">
+	
+	.user-detail{
+		padding:10px;
+	}
+	.users{
+		padding:50px;
+	}
+	.user-controls a{
+		margin-left:50px;
+	}
+</style>
+
+
+<div class="users">
+	<h1>The all users in the system</h1>
+	<ul class="user-list">
+		<%  @users.each do |user| %>
+	        <li class="user-detail">
+				<%= link_to( "#{user.login} (#{user.email}) ", admin_user_path(user) ) %>
+				
+				<div class="user-controls">
+					<%= link_to("EDIT" , edit_admin_user_path(user) )%>
+					<%= link_to("DELETE" ,  admin_user_path(user) ,:method=>:delete )%>
+				</div>
+			</li>
+	    <% end %>
+	</ul>
+		<%= will_paginate @users %>
+		<div class="user-counts">Total:  <%= @users.total_entries %> users </div>
+</div>
+
+<div class="user-create">
+<%= link_to("Create a User", new_admin_user_path )%>
+</div>
+
+<div class="back">
+<%= link_to("Back to forum list",admin_forums_path )%>
+</div>

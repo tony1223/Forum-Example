@@ -9,8 +9,8 @@ ActionController::Routing::Routes.draw do |map|
 
   # The priority is based upon order of creation: first created -> highest priority.
   
-  map.resources :forums do |forums|
-    forums.resources :posts
+  map.resources :forums do |forum|
+    forum.resources :posts
   end
 
 
@@ -42,6 +42,15 @@ ActionController::Routing::Routes.draw do |map|
   #     # Directs /admin/products/* to Admin::ProductsController (app/controllers/admin/products_controller.rb)
   #     admin.resources :products
   #   end
+     map.namespace :admin do |admin|
+       # Directs /admin/products/* to Admin::ProductsController (app/controllers/admin/products_controller.rb)
+       admin.root :controller => "forums"
+       admin.resources :users
+       admin.resources :forums do |forum|
+         forum.resources :posts
+       end
+     end
+
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   map.root :controller => "forums"

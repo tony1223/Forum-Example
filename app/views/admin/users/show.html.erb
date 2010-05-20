@@ -1,0 +1,52 @@
+<style type="text/css">
+	.user-name,.user-email,.insert-button{
+		padding:20px;
+		clear:both;
+		width:600px;
+	}
+	.user-name-header,.user-email-header{
+		width:150px;
+		text-align:center;
+		float:left;
+	}
+	.user-name-content,.user-email-content{
+		width:250px;
+		float:left;
+		padding-left:40px;
+		
+	}
+	.links{
+		clear:both;
+		padding:5px;
+		margin-top:40px;
+	}
+	.links a{
+		display:block;
+		padding:10px;
+	}
+</style>
+
+<div class='user'>
+	<div class="user-name">
+		<div class="user-name-header">
+			Name
+		</div>		
+		<div class="user-name-content">
+			 <%= h @user.login %>
+		</div>
+	</div>	
+	<div class="user-email">
+		<div class="user-email-header">
+			Email
+		</div>
+		<div class="user-email-content">
+			<%= h @user.email %>
+		</div>
+	</div>
+</div>
+
+<div class="links">
+	
+	<%= link_to("Edit this user" , edit_admin_user_path(@user) )%>
+	<%= link_to("Back to index" , admin_users_path) %>
+</div>

@@ -4,7 +4,7 @@
 	}
 </style>
 
-<% form_for @post, :url => forum_post_path(@forum,@post) , :method=>:put do |f| %>
+<% form_for @post, :url => admin_forum_post_path(@forum,@post) , :method=>:put do |f| %>
 
     <div class="post-poster">
       <%= f.label :title, "Poster" %>

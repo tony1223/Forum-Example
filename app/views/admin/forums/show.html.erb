@@ -1,0 +1,13 @@
+<div class="forum">
+	<div class="forum-name">
+		<%= h @forum.name %>
+	</div>
+	<div class="forum-content">
+		<%= h @forum.description %>
+	</div> 
+</div>
+
+<p> <%= link_to("read posts ",admin_forum_posts_path(@forum)) %></p>
+
+<p> <%= link_to("Edit this forum" ,edit_admin_forum_path(@forum)) %></p>	
+<p> <%= link_to("Back to index" , admin_forums_path() )%></p>
